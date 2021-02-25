@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Feedback Survey Page</title>
+    <link rel="stylesheet" href="survey_page.css" />
+</head>
+
+<div class="container">
+    <h1 id="title">Your feedback helps us to improve!</h1>
+    <p id="description">Please tell us about your experience with our company</p>
+
+    <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+
+    <form id="survey-form">
+        <div class="form-group">
+            <label for="name" id="name-label">Name<span class="req">(Required)</span></label>
+                <input type="text" id="name" name="name" class="cbox" placeholder="Enter your name" required />
+        </div>
+        <div class="form-group">
+            <label for="email" id="email-label">Email<span class="req">(Required)</span></label>
+                <input type="email" id="email" name="email" class="cbox" placeholder="Enter your email" required />
+        </div>
+        <div class="form-group">
+            <label for="number" id="number-label">Age</label>
+                <input type="number" id="number" name="number" class="cbox" placeholder="Enter your age" min="8" max="120" required />
+        </div>
+
+    <div class="form-group">
+        <p>Which service did you use?</p>
+        <select id="dropdown" name="service" class="cbox" required>
+            <option disabled selected value>--Select service--</option>
+            <option value="management">Management</option>
+            <option value="software">Software</option>
+            <option value="consulting">Consulting</option>
+            <option value="professional">Professional Services</option>
+            <option value="insurance">Insurance</option>
+            <option value="training">Training</option>
+            <option value="finance">Finance</option>
+        </select>
+    </div>
+
+    <div class="form-group">
+        <p>Would you recommend us to your friends?</p>
+        <label>
+            <input type="radio" name="recommend" value="for-sure" class="input-radio" checked/>For Sure!</label>
+        <label>
+            <input type="radio" name="recommend" value="maybe" class="input-radio"/>Maybe?</label>
+        <label>
+            <input type="radio" name="recommend" value="no" class="input-radio"/>I don't have any friends...</label>
+    </div>
+
+    <div class="form-group">
+        <p>How did you hear about us?</p>
+        <label for="check1">
+            <input class="input-check" type="checkbox" id="check1" name="check1" value="Friends"/>From a family member or friend</label>
+        <label for="check2">
+            <input class="input-check" type="checkbox" id="check2" name="check2" value="Newspaper"/>From a newpaper or article</label>
+        <label for="check3">
+            <input class="input-check" type="checkbox" id="check3" name="check3" value="Google"/>By searching Google</label>
+        <label for="check4">
+            <input class="input-check" type="checkbox" id="check4" name="check4" value="Ad"/>From an advertisement</label>
+        <label for="check5">Other:
+            <input class="input-check" type="text" id="check5" name="check5" placeholder="Place text here..."/>
+        </label><br>
+    </div>
+
+    <div class="form-group">
+        <label for="suggestions">Please let us know if you have any other concerns:</label>
+        <textarea id="suggestions" name="suggestions" rows="5" columns="100" placeholder="Place text here..."></textarea>
+    </div>
+
+    <div class="form-group">
+        <button type="submit" class="submit-button" id="submit">Submit</button>
+    </div>
+    </form>
+</div>
+</html>
+
